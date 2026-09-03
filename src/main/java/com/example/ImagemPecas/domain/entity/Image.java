@@ -26,7 +26,7 @@ public class Image {
     @Column
     private String name;
     @Column
-    private  Long time;
+    private  Long size;
     @Column
     @Enumerated (EnumType.STRING)
     private ImageExtension extension;
@@ -34,7 +34,7 @@ public class Image {
     @CreatedDate
     private LocalDateTime uploadingDate;
     @Column
-    private String tape;
+    private String tags;
     @Column
     @Lob
     private byte[] file;
