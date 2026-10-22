@@ -5,18 +5,20 @@ interface TemplateProps {
 export const Template: React.FC<TemplateProps> = (props: TemplateProps) => {
     return(
         <>
-        <Header/>
+            <Header/>
+
             {props.children}
-        //footer
+
+            // footer
         </>
     )
 }
 
-const Header: React.FC =  () =>{
+const Header: React.FC = () =>{
     return(
-        <header className='bg-red-600 text-white py-3'>
-            <div className='container mx-auto fiex items-center justify-between px-4'>
-                <h1 className='text-3x1 font-bold'>Imagem Peças</h1>
+        <header className="bg-red-600 text-white py-3">
+            <div className="container mx-auto flex items-center justify-between px-4">
+                <h1 className="text-3x1 font-bold">Imagem Peças</h1>
             </div>
         </header>
     )
